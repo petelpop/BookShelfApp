@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Bookshelf</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <header>
+    Edit Bookshelf
+  </header>
+<main>
+  <section>
+    <h2>Edit Buku</h2>
+    <form id="bookForm" data-testid="bookForm">
+      <div>
+        <label for="bookFormTitle">Judul</label>
+        <input id="bookFormTitle" type="text" required data-testid="bookFormTitleInput" />
+      </div>
+      <div>
+        <label for="bookFormAuthor">Penulis</label>
+        <input id="bookFormAuthor" type="text" required data-testid="bookFormAuthorInput" />
+      </div>
+      <div>
+        <label for="bookFormYear">Tahun</label>
+        <input id="bookFormYear" type="number" required data-testid="bookFormYearInput" />
+      </div>
+      <div>
+        <label for="bookFormIsComplete">Selesai dibaca</label>
+        <input
+          id="bookFormIsComplete"
+          type="checkbox"
+          data-testid="bookFormIsCompleteCheckbox"
+        />
+      </div>
+      <div data-testid="bookItem">
+      <button id="editBookForm" type="button" data-testid="bookFormSubmitButton">
+        Edit Buku
+      </button>
+      <button id="cancelButton" type="button" data-testid="bookFormSubmitButton">
+        cancel edit
+      </button>
+    </div>
+    </form>
+  </section>
+  <div id="snackbar">Perubahan berhasil tersimpan!</div>
+
+  <script src="js/edit.js"></script>
+</main>
+</body>
+</html>
